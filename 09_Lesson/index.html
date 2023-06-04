@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a {
+            display: grid;
+            grid-template-columns: 200px 75px;
+        }
+
+        .b {
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+        }
+
+        .c {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+
+        .d{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            align-items: center;
+            column-gap: 20px;
+            
+        }
+
+        .d .container{
+            border: 1px solid gray;
+            display: inline;
+            box-shadow: 0px 0px 5px gray;
+            align-items: center;
+        }
+
+        .grid-temp{
+            display: grid;
+            grid-template-columns: 50px 100%;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        button{
+            background-color: cornflowerblue;
+            padding: 10px 20px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-left: 10px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div style="background-color: rebeccapurple; height: 30px;" class="grid-1"> 200px</div>
+        <div style="background-color: aquamarine; height: 30px;" class="grid-2">75px</div>
+    </div>
+
+    <div class="b">
+        <div style="background-color: rebeccapurple; height: 30px;" class="grid-1"> 50px</div>
+        <div style="background-color: aquamarine; height: 30px;" class="grid-2">1fr</div>
+        <div style="background-color: rebeccapurple; height: 30px;" class="grid-1"> 75px</div>
+    </div>
+
+    <div class="c">
+        <div style="background-color: rebeccapurple; height: 30px;" class="grid-1"> 1fr</div>
+        <div style="background-color: aquamarine; height: 30px;" class="grid-2">1fr</div>
+        <div style="background-color: rebeccapurple; height: 30px;" class="grid-1"> 1fr</div>
+        <div style="background-color: aquamarine; height: 30px;" class="grid-2">1fr</div>
+        <div style="background-color: rebeccapurple; height: 30px;" class="grid-1"> 1fr</div>
+        <div style="background-color: aquamarine; height: 30px;" class="grid-2">1fr</div>
+        <div style="background-color: rebeccapurple; height: 30px;" class="grid-1"> 1fr</div>
+        <div style="background-color: aquamarine; height: 30px;" class="grid-2">1fr</div>
+    </div>
+
+
+    <div style = "margin-top : 20px" class="d">
+        <div class="container">
+            <div>
+                <img width="200px" height = "240px" src="cat.jpg" alt="">
+            </div>
+    
+            <div>
+                <p style="font-weight: bold;font-size: 20px;margin-top: 2px; margin-bottom: 2px; margin-left: 10px;">
+                    Oliver
+                </p>
+    
+                <div class="grid-temp">
+                    <img width="40px" height="40px" style="border-radius: 20px;" src="cat.jpg" alt="">
+                    <p>2 mutual friends</p>
+                </div>
+                
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <img width="200px" height = "240px" src="cat.jpg" alt="">
+            </div>
+    
+            <div>
+                <p style="font-weight: bold;font-size: 20px;margin-top: 2px; margin-bottom: 2px; margin-left: 10px;">
+                    Oliver
+                </p>
+    
+                <div class="grid-temp">
+                    <img width="40px" height="40px" style="border-radius: 20px;" src="cat.jpg" alt="">
+                    <p>2 mutual friends</p>
+                </div>
+                
+                <button>Add Friend</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div>
+                <img width="200px" height = "240px" src="cat.jpg" alt="">
+            </div>
+    
+            <div>
+                <p style="font-weight: bold;font-size: 20px;margin-top: 2px; margin-bottom: 2px; margin-left: 10px;">
+                    Oliver
+                </p>
+    
+                <div class="grid-temp">
+                    <img width="40px" height="40px" style="border-radius: 20px;" src="cat.jpg" alt="">
+                    <p>2 mutual friends</p>
+                </div>
+                
+                <button>Add Friend</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
