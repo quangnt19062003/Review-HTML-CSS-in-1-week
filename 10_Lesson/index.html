@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .a ,.b{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .c {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        .d {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .e {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            border: 1px solid rgb(200, 200, 200);
+            border-radius: 4px;
+        }
+
+        .e .flex-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 4px 8px;
+        }
+
+        .e .flex-box .notifications{
+            background-color: cornflowerblue;
+            padding: 2px 6px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .g {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 300px;
+        }
+
+        .g div img {
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+        }
+
+        .g div p {
+            margin: 0;
+        }
+
+        .g div button{
+            background-color: cornflowerblue;
+            padding: 5px 10px;
+            font-weight: bold;
+            border-radius: 4px;
+            border: none;
+            color: white;
+        }
+
+        .f{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content:  space-between;
+            background-color: blueviolet;
+            height: 60px;
+            align-items: center;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .f div input{
+            flex: 1;
+            width: 500px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .f div button{
+            background-color: blueviolet;
+            border: 1px solid white;
+            color: white;
+            padding: 8px 16px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div style="background-color: aquamarine; width: 200px;">A</div>
+        <div style="background-color: bisque; width: 75px;">B</div>
+    </div>
+
+    <div class="b">
+        <div style="background-color: aquamarine; width: 50px;">A</div>
+        <div style="background-color: bisque; flex: 1;">B</div>
+        <div style="background-color: aquamarine; width: 75px;">C</div>
+    </div>
+
+    <div class="c">
+        <div style="background-color: aquamarine; width: 75px;">A</div>
+        <div style="background-color: aquamarine; width: 75px;">B</div>
+        <div style="background-color: aquamarine; width: 75px;">C</div>
+        <div style="background-color: aquamarine; width: 75px;">D</div>
+    </div>
+
+    <div class="d">
+        <div style="background-color: aquamarine; width: 75px;">A</div>
+        <div style="background-color: aquamarine; width: 75px;">B</div>
+    </div>
+
+    <div class="e">
+        <div class="flex-box">
+            <div>Home</div>
+            <div class="notifications">14</div>
+        </div>
+        <div class="flex-box">
+            <div>Notifications</div>
+            <div class="notifications">3</div>
+        </div>
+        <div class="flex-box">
+            <div>Messages</div>
+            <div class="notifications">5</div>
+        </div>
+    </div>
+
+    <div class="g">
+        <div style="width: 70px;">
+            <img src="cat.jpg" alt="">
+        </div>
+        <div style="flex: 1;">
+            <p>oliver</p>
+            <p>the cat</p>
+            <p>Popular</p>
+        </div>
+        <div style="width: 80px;">
+            <button>Follow</button>
+        </div>
+    </div>
+
+    <div class="g">
+        <div style="width: 70px;">
+            <img src="cat.jpg" alt="">
+        </div>
+        <div style="flex: 1;">
+            <p>oliver</p>
+            <p>the cat</p>
+            <p>Popular</p>
+        </div>
+        <div style="width: 80px;">
+            <button>Follow</button>
+        </div>
+    </div>
+
+    <div class="g">
+        <div style="width: 70px;">
+            <img src="cat.jpg" alt="">
+        </div>
+        <div style="flex: 1;">
+            <p>oliver</p>
+            <p>the cat</p>
+            <p>Popular</p>
+        </div>
+        <div style="width: 80px;">
+            <button>Follow</button>
+        </div>
+    </div>
+
+
+    <div class="f">
+        <div style="font-weight: bold; color: white; width: 40px;">Home</div>
+        <div><input type="search" placeholder="Search"></div>
+        <div><button>Download</button></div>
+    </div>
+</body>
+</html>
